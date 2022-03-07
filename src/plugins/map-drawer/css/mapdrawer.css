@@ -1,0 +1,82 @@
+.mapdrawer .mapDevice {
+	background: #176573;
+	
+}
+
+
+.mapdrawer .mapDevice  .deviceBox{
+	position: absolute;
+	width:96%;
+	height:90%;
+	border: 1px solid #013846;
+	left:2%;
+	top:5%;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+	word-break:keep-all;/* 不换行 */
+    white-space:nowrap;/* 不换行 */
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.mapdrawer .mapPathNode {
+	width: 10px;
+	height: 10px;
+	/* background: url(~@assets/image/inspect/map_node-1.png) no-repeat center center; */
+	border: solid 1px #666;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.mapdrawer .mapEnvDevice {
+	line-height:48px;
+	font-size:12px;
+	width: 48px;
+	height: 48px;
+	border-radius: 5px;
+	border: 1px solid #2F929F;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	text-align:center;
+}
+
+.mapdrawer .mapBatteryNode {
+	width: 32px;
+	height: 32px;
+	background: url(~@assets/image/device/battery-point.png) no-repeat center center;
+}
+
+.mapdrawer .mapObjectFocus {
+	border: 1px solid #5DDBE2;
+}
+
+.mapdrawer .mapDevice,
+.mapdrawer .mapPathNode,
+.mapdrawer .mapEnvDevice,
+.mapdrawer .mapBatteryNode {
+	position: absolute;
+}
+
+.mapdrawer .mapRobot {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url(~@assets/image/inspect/robot_new-1.png) no-repeat center center;
+	background-size: contain;
+}
+
+.mapdrawer .mapDevice.mapDeviceFocus{
+	background: darkred !important;
+}
+.mapdrawer .mapDevice.mapDeviceSelect{
+	background: green !important;
+}
+
+
+.mapdrawer .mapEnvDevice.mapDeviceFocus{
+	border: 1px solid red !important;
+}
+
+
